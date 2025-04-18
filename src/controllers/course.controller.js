@@ -3,7 +3,7 @@ import { Category } from "../models/Category.model.js";
 import { apiError } from "../utilities/apiError.js";
 import { asyncHandler } from "../utilities/asyncHandler.js";
 import { uploadOnCloudinary } from "../utilities/cloudinary.js";
-import { User } from "../models/user.model.js";
+import { User } from "../models/User.model.js";
 // import { User } from "../models/user.model.js";
 import { apiResponse } from "../utilities/apiResponse.js";
 import { Section } from "../models/Section.model.js";
