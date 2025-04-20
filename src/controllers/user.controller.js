@@ -104,7 +104,7 @@ export const loginUser=asyncHandler(async(req,res)=>{
 
     const {accessToken}=await generateBothTokens(user)
     const option={httpOnly:process.env.OPTION === "production",secure: process.env.OPTION === "production",
-        sameSite: "none",}
+        sameSite: "None",}
     res
     .status(200)
     .cookie("accessToken",accessToken,option)
@@ -269,7 +269,7 @@ export const verifySession=asyncHandler(async(req,res)=>{
 // logout controller
 export const logout= asyncHandler((async(req,res)=>{
     const option={httpOnly:process.env.OPTION === "production",secure: process.env.OPTION === "production",
-        sameSite: "none",}
+        sameSite: "None",}
     res.status(200).clearCookie("accessToken",option).json(new apiResponse(200,{},"user logged out successfully"))
 }))
 
